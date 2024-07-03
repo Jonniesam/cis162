@@ -6,53 +6,81 @@ html{
 }
 
 body{
+    margin-left: auto;
+    margin-right: auto;
+    width: 95;
     padding: 5em 5em 0 5em;
     padding-bottom: 0;
+    max-width: 960px;
+    min-width: 640px;
+    display: block;
 }
 
-p, h2{
+p, h2, img{
     margin-top: 5rem;
 }
 
+#leftColumn{
+    clear: left;
+    float: left;
+    width: 33%;
+}
 
-h2{
-    text-align: center;
-    background-color: rgb(90, 90, 90);
+#rightColumn{
+    float: right;
+    width: 33%;
+}
+
+#contactInfo{
+    margin-top: 100%;
     
 }
 
+img{
+    width: 450px;
+    border-radius: 5px;
+}
 
-h1{
+h1, h2{
     text-align: center;
 }
 
 footer{
-    margin-top: 0em;
     border-top: solid white 2px;
 }
 
 nav > ul {
-    display: flex;
+    
     justify-content: space-evenly;
     line-height: 2em;
     list-style-type: none;
     padding-left: 5px;
+    display: flex;
+    
 }
 
-nav > ul > li{
+nav > ul > a li {
     border: solid white 3px;
     border-radius: 5px;
     padding: 0px 30px;
+    transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
+nav > ul > a li:hover{
+    border-color: rgb(180, 180, 180);
+    background-color: aliceblue;
+}
 
 a{
     color: white
 }
 
+a li:hover{
+    color: black;
+}
+
 a:hover{
     color: rgb(180, 180, 180);
-    font-weight: bold;
 }
 
 
